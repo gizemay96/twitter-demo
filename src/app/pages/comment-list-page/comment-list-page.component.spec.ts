@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TwitPageComponent } from './twit-page.component';
+import { CommentListPageComponent } from './comment-list-page.component';
 
-describe('TwitPageComponent', () => {
-  let component: TwitPageComponent;
-  let fixture: ComponentFixture<TwitPageComponent>;
+describe('CommentListPageComponent', () => {
+  let component: CommentListPageComponent;
+  let fixture: ComponentFixture<CommentListPageComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TwitPageComponent ]
+      declarations: [ CommentListPageComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TwitPageComponent);
+    fixture = TestBed.createComponent(CommentListPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Tweet } from '../../types/tweet.type';
-import { TweetServiceService } from '../../services/tweet-service.service';
+import { Tweet } from '../../../types/tweet.type';
+import { TweetServiceService } from '../../../services/tweet-service.service';
 import { Router } from '@angular/router';
 
 @Component({

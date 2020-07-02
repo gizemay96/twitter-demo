@@ -5,10 +5,10 @@
   </div>
   <p>{{ tweet.text }}</p>
   <div class="card-actions">
-    <button class="btn-action">
-      <i class="far fa-comment"></i>
-      Comments
-    </button>
+      <button routerLink ="/commentform//{{ tweet.id }}" class="btn-action">
+        <i class="far fa-comment"></i>
+        Comments
+      </button>
     
     <button class="btn-action" (click)="onRetweet(tweet.id)">
       <i class="fas fa-retweet"></i>
@@ -21,10 +21,11 @@
     </button>
 
 
-    <button class="btn-action">
+    <button routerLink ="/commentlist//{{ tweet.id }}" class="btn-action">
       <i class="fas fa-info-circle"></i>
       Tweet Details
     </button>
 
   </div>
 </div>
+

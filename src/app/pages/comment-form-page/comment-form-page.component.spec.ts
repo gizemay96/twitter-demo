@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SideBarCardComponent } from './side-bar-card.component';
+import { CommentFormPageComponent } from './comment-form-page.component';
 
-describe('SideBarCardComponent', () => {
-  let component: SideBarCardComponent;
-  let fixture: ComponentFixture<SideBarCardComponent>;
+describe('CommentFormPageComponent', () => {
+  let component: CommentFormPageComponent;
+  let fixture: ComponentFixture<CommentFormPageComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SideBarCardComponent ]
+      declarations: [ CommentFormPageComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SideBarCardComponent);
+    fixture = TestBed.createComponent(CommentFormPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

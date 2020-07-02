@@ -1,1 +1,14 @@
-<p>follow-card works!</p>
+<div class="sidebar-card">
+    <div class="card-header">
+        <h3>You might like</h3>
+        <div class="line"></div>
+    </div>
+    <div class="card-elements">
+        <app-card-item-user *ngFor = "let user of users" [user]="user"></app-card-item-user>
+    </div>
+    <div class="card-bottom">
+        <div class="text-button">
+            <a class="text-btn" href="/">Show more</a>
+        </div>
+    </div>
+</div>

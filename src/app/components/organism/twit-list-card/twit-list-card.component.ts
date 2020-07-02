@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TweetServiceService } from '../../services/tweet-service.service';
+import { TweetServiceService } from '../../../services/tweet-service.service';
 
 @Component({
   selector: 'app-twit-list-card',
