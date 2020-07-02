@@ -1,0 +1,43 @@
+<div class="tweet-input-card">
+    <form action="#" (submit) = "onSubmit()">
+      <div class="form-control">
+        <label for="tweet-title"></label>
+        <input
+          type="text"
+          name="tweet-title"
+          id="tweet-title"
+          placeholder="Enter a title..."
+          [(ngModel)]="tweet.title"
+        />
+      </div>
+      <div class="tweet-area-content">
+        <div class="input-image">
+          <img class="sm-circle" src="https://pbs.twimg.com/profile_banners/985181864/1357071163/1080x360" alt="">
+        </div>
+        <div class="form-control">
+          <label for="tweet-area"></label>
+          <textarea
+            name="tweet-area"
+            id="tweet-area"
+            cols="47"
+            rows="1"
+            placeholder="What's Happening ?"
+            [(ngModel)]="tweet.text"
+          ></textarea>
+        </div>
+      </div>
+      <div class="form-actions">
+        <div class="action-icons">
+          <a href="/"><i class="far fa-image"></i></a>
+          <a href="/"><i class="far fa-square"></i></a>
+          <a href="/"><i class="fas fa-poll-h"></i></a>
+          <a href="/"><i class="far fa-smile"></i></a>
+          <a href="/"><i class="fas fa-business-time"></i></a>
+        </div>
+        <div class="action-btn">
+          <button class="btn-md" type="submit">Tweet</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  

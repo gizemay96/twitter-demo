@@ -1,0 +1,17 @@
+.sidebar-card{
+    width: 320px;
+    border-radius: 15px;
+    background-color: #1C2733;
+    padding: 15px;
+
+    .card-header{
+        h3{
+            color: #ffffff;
+            letter-spacing: 1.1px;
+        }
+    }
+
+    .text-button{
+        padding: 5px 0;
+    }
+}

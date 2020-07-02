@@ -6,25 +6,119 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: #17202A;
+  font-family: Helvetica;
+}
+
 .container {
   max-width: 1200px;
   margin: 20px auto;
 }
 
-hr {
-  margin: 20px 0;
+.line{
+  background-color: #3A444C;
+  max-width: 320px;
+  height: 1px;
+  margin: 10px 0;
 }
 
-.btn {
+
+
+
+
+
+// ********************  Buttons ***********************  //
+.btn-sm {
   cursor: pointer;
-  border: none;
-  background-color: blue;
-  color: #fff;
-  padding: 10px 30px;
-  border-radius: 4px;
+  border: 1px solid #4BA0EC;
+  background-color: transparent;
+  color: #4BA0EC;
+  padding: 8px 20px;
+  border-radius: 14px;
+  outline: none;
+  font-weight: bold;
  
 
   &:hover {
-    background-color: darken(blue, 10%);
+
+    color: #fff;
+    background-color: darken(#4BA0EC, 10%);
   }
 }
+
+.btn-md {
+  cursor: pointer;
+  border: none;
+  background-color: #4BA0EC;
+  color: #fff;
+  padding: 14px 30px;
+  border-radius: 4px;
+  outline: none;
+ 
+
+  &:hover {
+    background-color: darken(#4BA0EC, 10%);
+  }
+}
+
+.btn-lg {
+  width: 210px;
+  background-color: #4BA0EC;
+  color: #fff;
+  padding: 14px 30px;
+  margin: 15px 0;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+ 
+
+  &:hover {
+    background-color: darken(#4BA0EC, 10%);
+  }
+}
+ 
+.btn-action {
+  margin-right: 20px;
+  background-color: transparent;
+  border: none;
+  color: #8A98A4;
+  font-size: 11px;
+  cursor: pointer;
+  outline: none;
+}
+
+.text-btn{
+  color: #4BA0EC;
+  text-decoration: none;
+
+  &:hover{
+    color: darken(#4BA0EC,10%);
+  }
+}
+
+// ********************  Buttons ***********************  //
+
+
+
+
+// ********************  Images ***********************  //
+.sm-circle{
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.md-cicrle{
+  width: 130px;
+  height: 130px;
+  overflow: hidden;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+// ********************  Images ***********************  //

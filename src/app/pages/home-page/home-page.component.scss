@@ -1,22 +1,25 @@
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 20px;
+.page-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 600px;
+    border-right: 1px solid #3A444C;
+    border-left: 1px solid #3A444C;
+
+    h1{
+        color: #ffffff;
+        font-size: 16px;
+    }
+
+    i{
+        color: #4BA0EC;
+    }
 }
 
-.tweet-card {
-  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-
-  h1 {
-      margin-bottom: 10px;
-  }
-}
-
-.card-actions {
-  display: flex;
-
-  button {
-      margin-right: 20px;
-  }
+.page-bottom{
+    padding: 20px;
+    width: 600px;
+    border-right: 1px solid #3A444C;
+    border-left: 1px solid #3A444C;
 }

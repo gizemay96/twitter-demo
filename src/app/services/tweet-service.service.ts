@@ -8,7 +8,7 @@ export class TweetServiceService {
   tweets: Tweet[] = [
     {
       id: 1,
-      title: 'lorem',
+      title: 'twit1',
       text:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat eget libero eu lobortis. Praesent porttitor mi sed molestie ornare. Aliquam mattis felis quis elit hendrerit mollis. Morbi eu turpis in turpis ornare sodales. Suspendisse leo enim, gravida at tellus nec, porttitor consequat purus. ',
       likes: 200,
@@ -16,7 +16,7 @@ export class TweetServiceService {
     },
     {
       id: 2,
-      title: 'lorem',
+      title: 'twit2',
       text:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat eget libero eu lobortis. Praesent porttitor mi sed molestie ornare. Aliquam mattis felis quis elit hendrerit mollis. Morbi eu turpis in turpis ornare sodales. Suspendisse leo enim, gravida at tellus nec, porttitor consequat purus. ',
       likes: 300,
@@ -24,7 +24,7 @@ export class TweetServiceService {
     },
     {
       id: 3,
-      title: 'lorem',
+      title: 'twit3',
       text:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat eget libero eu lobortis. Praesent porttitor mi sed molestie ornare. Aliquam mattis felis quis elit hendrerit mollis. Morbi eu turpis in turpis ornare sodales. Suspendisse leo enim, gravida at tellus nec, porttitor consequat purus. ',
       likes: 10,

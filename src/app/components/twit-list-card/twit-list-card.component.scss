@@ -1,0 +1,38 @@
+.tweet-card {
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 600px;
+    border: 1px solid #3A444C;
+    margin: 0 15px 0 0;
+  
+    h1 {
+        margin-bottom: 10px;
+        color: #ffffff;
+        font-size: 16px;
+        margin-right: 5px;
+    }
+    p{
+        font-size: 16px;
+        color: #ffffff;
+    }
+
+    
+    .card-header{
+        display: flex;
+        h5{
+            color: #8A98A4;
+        }
+    }
+
+  }
+  
+  .card-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+
+       i{
+           font-size: 13px;
+       }
+  }
