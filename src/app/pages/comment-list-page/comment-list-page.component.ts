@@ -6,10 +6,9 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-comment-list-page',
   templateUrl: './comment-list-page.component.html',
-  styleUrls: ['./comment-list-page.component.scss']
+  styleUrls: ['./comment-list-page.component.scss'],
 })
 export class CommentListPageComponent implements OnInit {
-
   tweet = this.tweets;
   selectedTweet;
 
@@ -20,26 +19,24 @@ export class CommentListPageComponent implements OnInit {
     private commentService: CommentService,
     private tweetService: TweetServiceService,
     private route: ActivatedRoute
-    ) { }
+  ) {}
 
   ngOnInit(): void {
-
     /* FILTER COMMENTS */
     const getId: string = this.route.snapshot.paramMap.get('id');
     const id = +getId;
 
-    const selectComent = this.comment.filter((comment) => comment.tweetId === id);
+    const selectComent = this.comment.filter(
+      (comment) => comment.tweetId === id
+    );
     this.selectedComments = selectComent;
     /* FILTER COMMENTS */
 
-
     /* GET SELECTED TWEET */
-    const selectedId = id - 1
-    const selectTweet = this.tweet[selectedId]
+    const selectedId = id - 1;
+    const selectTweet = this.tweet[selectedId];
     this.selectedTweet = selectTweet;
     /* GET SELECTED TWEET */
-
-    console.log(this.selectedComments)
   }
 
   get comments() {
@@ -49,5 +46,4 @@ export class CommentListPageComponent implements OnInit {
   get tweets() {
     return this.tweetService.tweets;
   }
-
 }

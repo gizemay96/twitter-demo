@@ -3,22 +3,27 @@
   <p><i class="far fa-star"></i></p>
 </div>
 <div class="card tweet-card">
-    <div class="card-header">
-      <h1 class="tweet-title">{{ selectedTweet.title | titlecase }}</h1>
-      <h5 class="tweet-nick"> @Name</h5>
-    </div>
-    <p class="tweet-text">{{ selectedTweet.text }}</p>
-    <div class="line"></div>
-    <div class="card-info">
-            <p><strong>{{selectedTweet.retweets}}</strong> Retweets</p>
-            <p><strong>{{selectedTweet.likes}}</strong> Likes</p>
-    </div>
-    <div class="line"></div>
+  <div class="card-header">
+    <h1 class="tweet-title">{{ selectedTweet.title | titlecase }}</h1>
+    <h5 class="tweet-nick">@Name</h5>
   </div>
+  <p class="tweet-text">{{ selectedTweet.text }}</p>
+  <div class="line"></div>
+  <div class="card-info">
+    <p>
+      <strong>{{ selectedTweet.retweets }}</strong> Retweets
+    </p>
+    <p>
+      <strong>{{ selectedTweet.likes }}</strong> Likes
+    </p>
+  </div>
+  <div class="line"></div>
+</div>
 
 <div>
-  <app-comment-list *ngFor = "let coment of selectedComments" [coment]="coment" ></app-comment-list>
+  <app-comment-list
+    *ngFor="let coment of selectedComments"
+    [coment]="coment"
+  ></app-comment-list>
 </div>
-<div class="page-bottom">
-
-
+<div class="page-bottom"></div>

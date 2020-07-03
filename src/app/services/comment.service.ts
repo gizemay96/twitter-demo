@@ -1,17 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Comment } from '../types/comment.type';
-import { comment } from '../models/shared/commentData.json';
+import { commentData } from '../models/shared/commentData.json';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CommentService {
+  comments = commentData;
 
-  comments = comment;
-
-  constructor() {
-
-   }
+  constructor() {}
 
   submitComment(comment: Comment): void {
     const newComment = {
@@ -22,6 +19,5 @@ export class CommentService {
     };
 
     this.comments.unshift(newComment);
-    
   }
 }

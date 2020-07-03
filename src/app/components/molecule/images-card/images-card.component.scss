@@ -1,14 +1,14 @@
-.images-card{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-row-gap: 3px;
-    border-radius: 20px;
-    overflow: hidden;
-    margin-bottom: 20px;
+.images-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 3px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
 
-    img{
-        width: 115px;
-        height: 96px;
-        object-fit: cover;
-    }
+  img {
+    width: 115px;
+    height: 96px;
+    object-fit: cover;
+  }
 }

@@ -1,19 +1,18 @@
-.search-input{
-    margin-bottom: 20px;
-    input{
-        border: none;
-        width: 350px;
-        height: 40px;
-        background-color: #283340;
-        border-radius: 100px;
-        outline: none;
-        color: white;
+.search-input {
+  margin-bottom: 20px;
+  input {
+    border: none;
+    width: 350px;
+    height: 40px;
+    background-color: #283340;
+    border-radius: 100px;
+    outline: none;
+    color: white;
 
-        &::placeholder{
-            font-size: 14px;
-            padding: 0px 25px;
-            color: #8A98A4;
-        }
+    &::placeholder {
+      font-size: 14px;
+      padding: 0px 25px;
+      color: #8a98a4;
     }
-
+  }
 }

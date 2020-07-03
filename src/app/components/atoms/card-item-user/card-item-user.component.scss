@@ -1,27 +1,27 @@
-.user-card{
+.user-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+
+  .card-content {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 15px;
 
-    .card-content{
-        display: flex;
-
-        .card-image{
-            margin-right: 10px;
-        }
-
-        .card-title{
-            padding-top: 5px;
-            h3{
-                color: #ffffff;
-                font-size: 14px;
-            }
-    
-            p{
-                color: #8A98A4;
-                font-size: 13px;
-            }
-        }
+    .card-image {
+      margin-right: 10px;
     }
+
+    .card-title {
+      padding-top: 5px;
+      h3 {
+        color: #ffffff;
+        font-size: 14px;
+      }
+
+      p {
+        color: #8a98a4;
+        font-size: 13px;
+      }
+    }
+  }
 }

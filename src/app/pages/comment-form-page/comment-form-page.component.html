@@ -4,19 +4,23 @@
 </div>
 
 <div class="card tweet-card">
-    <div class="card-header">
-      <h1 class="tweet-title">{{ selectedTweet.title | titlecase }}</h1>
-      <h5 class="tweet-nick"> @Name</h5>
-    </div>
-    <p class="tweet-text">{{ selectedTweet.text }}</p>
-    <div class="line"></div>
-    <div class="card-info">
-            <p class="info-item"><strong>{{selectedTweet.retweets}}</strong> Retweets</p>
-            <p class="info-item"><strong>{{selectedTweet.likes}}</strong> Likes</p>
-    </div>
-    <div class="line"></div>
+  <div class="card-header">
+    <h1 class="tweet-title">{{ selectedTweet.title | titlecase }}</h1>
+    <h5 class="tweet-nick">@Name</h5>
   </div>
+  <p class="tweet-text">{{ selectedTweet.text }}</p>
+  <div class="line"></div>
+  <div class="card-info">
+    <p class="info-item">
+      <strong>{{ selectedTweet.retweets }}</strong> Retweets
+    </p>
+    <p class="info-item">
+      <strong>{{ selectedTweet.likes }}</strong> Likes
+    </p>
+  </div>
+  <div class="line"></div>
+</div>
 
-  <div>
-    <app-comment-form></app-comment-form>
-  </div>
+<div>
+  <app-comment-form></app-comment-form>
+</div>
