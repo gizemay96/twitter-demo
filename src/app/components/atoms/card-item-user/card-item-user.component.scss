@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 0;
+    padding: 0 15px;
 
     .card-content{
         display: flex;
@@ -15,12 +15,12 @@
             padding-top: 5px;
             h3{
                 color: #ffffff;
-                font-size: 16px;
+                font-size: 14px;
             }
     
             p{
                 color: #8A98A4;
-                font-size: 15px;
+                font-size: 13px;
             }
         }
     }

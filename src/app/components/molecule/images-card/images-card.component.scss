@@ -1,13 +1,13 @@
 .images-card{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 2px;
+    grid-row-gap: 3px;
     border-radius: 20px;
     overflow: hidden;
     margin-bottom: 20px;
 
     img{
-        width: 100px;
+        width: 115px;
         height: 96px;
         object-fit: cover;
     }

@@ -1,14 +1,13 @@
 nav{
-    padding: 0 30px;
     .nav-links{
         list-style: none;
         margin-left: 20px;
         .nav-link {
-            padding: 18px 0;
+            padding: 10px 0;
             
             i{
                 color: white;
-                font-size: 25px;
+                font-size: 20px;
             }
 
             a {
@@ -17,7 +16,7 @@ nav{
             grid-gap: 20px;
             text-decoration: none;
             color: #ffffff;
-            font-size: 17px;
+            font-size: 14px;
             strong{
                 padding: 5px 0;
             }

@@ -1,27 +1,27 @@
 <div class="card tweet-card">
   <div class="card-header">
-    <h1>{{ tweet.title | titlecase }}</h1>
-    <h5> @Name</h5>
+    <h1 class="tweet-title">{{ tweet.title | titlecase }}</h1>
+    <h5 class="tweet-nick"> @Name</h5>
   </div>
-  <p>{{ tweet.text }}</p>
+  <p class="tweet-text">{{ tweet.text }}</p>
   <div class="card-actions">
-      <button routerLink ="/commentform/{{ tweet.id }}" class="btn-action">
+      <button routerLink ="/commentform/{{ tweet.id }}" class="btn-action reply-btn">
         <i class="far fa-comment"></i>
         Send Reply
       </button>
     
-    <button class="btn-action" (click)="onRetweet(tweet.id)">
+    <button class="btn-action retweet-btn" (click)="onRetweet(tweet.id)">
       <i class="fas fa-retweet"></i>
       {{ tweet.retweets }}
     </button>
 
-    <button class="btn-action" (click)="onLike(tweet.id)">
+    <button class="btn-action like-btn" (click)="onLike(tweet.id)">
       <i class="far fa-heart"></i>
       {{ tweet.likes }}
     </button>
 
 
-    <button routerLink ="/commentlist/{{ tweet.id }}" class="btn-action">
+    <button routerLink ="/commentlist/{{ tweet.id }}" class="btn-action comment-btn">
       <i class="fas fa-info-circle"></i>
       Comments
     </button>

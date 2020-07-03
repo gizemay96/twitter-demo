@@ -5,23 +5,23 @@
 </div>
 <p class="comment-text">{{coment.text}} </p>
 <div class="card-actions">
-    <button routerLink ="/commentform//{{ coment.id }}" class="btn-action">
+    <button routerLink ="/commentlist/{{ coment.id }}" class="btn-action reply-btn">
         <i class="far fa-comment"></i>
         Comments
       </button>
     
-    <button class="btn-action" >
+    <button class="btn-action retweet-btn" >
       <i class="fas fa-retweet"></i>
       {{ coment.retweets }}
     </button>
 
-    <button class="btn-action">
+    <button class="btn-action like-btn">
       <i class="far fa-heart"></i>
       {{ coment.likes }}
     </button>
 
 
-    <button routerLink ="/commentlist//{{ coment.id }}" class="btn-action">
+    <button routerLink ="/commentlist/{{ coment.id }}" class="btn-action comment-btn">
       <i class="fas fa-info-circle"></i>
       Tweet Details
     </button>

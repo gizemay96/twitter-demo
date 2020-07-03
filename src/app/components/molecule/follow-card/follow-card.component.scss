@@ -1,17 +1,17 @@
 .sidebar-card{
-    width: 320px;
+    width: 350px;
     border-radius: 15px;
     background-color: #1C2733;
-    padding: 15px;
 
     .card-header{
-        h3{
+        padding: 15px 15px 0 15px;
+        h4{
             color: #ffffff;
             letter-spacing: 1.1px;
         }
     }
 
     .text-button{
-        padding: 5px 0;
+        font-size: 13px;
     }
 }

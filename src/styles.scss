@@ -45,7 +45,7 @@ body {
   border: none;
   background-color: #4ba0ec;
   color: #fff;
-  padding: 14px 30px;
+  padding: 10px 20px;
   border-radius: 20px;
   outline: none;
 
@@ -58,12 +58,13 @@ body {
   width: 210px;
   background-color: #4ba0ec;
   color: #fff;
-  padding: 14px 30px;
+  padding: 11px 30px;
   margin: 15px 0;
   outline: none;
   border: none;
   border-radius: 50px;
   cursor: pointer;
+  font-weight: bold;
 
   &:hover {
     background-color: darken(#4ba0ec, 10%);
@@ -78,11 +79,31 @@ body {
   font-size: 11px;
   cursor: pointer;
   outline: none;
+  transition: 200ms ease-in-out;
 }
+
+.reply-btn:hover,.comment-btn:hover{
+  color: #4ba0ec;
+  text-shadow: 0 0 10px #004b88;
+}
+
+.retweet-btn:hover{
+  color: rgb(56, 168, 84);
+  text-shadow: 0 0 10px #004e1e;
+
+}
+
+.like-btn:hover{
+  color: #ec4b73;
+  text-shadow: 0 0 10px #940025;
+}
+
 
 .text-btn {
   color: #4ba0ec;
   text-decoration: none;
+  font-size: 13px;
+  padding: 0 15px 15px 10px;
 
   &:hover {
     color: darken(#4ba0ec, 10%);
@@ -123,22 +144,24 @@ body {
 // ********************  Tweet Card ***********************  //
 
 .tweet-card,.comment-card {
-  width: 600px;
+  width: 590px;
 
   .tweet-title,.comment-title {
     margin-bottom: 10px;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 14px;
     margin-right: 5px;
   }
   .card-header {
     display: flex;
     .tweet-nick,.comment-nick {
       color: #8a98a4;
+      font-size: 10px;
+      padding-top: 2px;
     }
   }
   .tweet-text,.comment-text {
-    font-size: 16px;
+    font-size: 13px;
     color: #ffffff;
   }
 
@@ -164,6 +187,10 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-top: 10px;
+    padding-top: 20px;
+    i{
+      font-size: 13px;
+  }
   }
 }
 // ********************  Tweet Card ***********************  //
@@ -179,14 +206,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
-  width: 600px;
+  padding: 15px;
+  width: 590px;
   border-right: 1px solid #3A444C;
   border-left: 1px solid #3A444C;
 
   h1{
       color: #ffffff;
-      font-size: 16px;
+      font-size: 14px;
   }
 
   i{
@@ -196,7 +223,7 @@ body {
 
 .page-bottom{
   padding: 20px;
-  width: 600px;
+  width: 590px;
   border-right: 1px solid #3A444C;
   border-left: 1px solid #3A444C;
 }
