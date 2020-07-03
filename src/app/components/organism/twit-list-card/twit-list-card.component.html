@@ -5,7 +5,7 @@
   </div>
   <p>{{ tweet.text }}</p>
   <div class="card-actions">
-      <button routerLink ="/commentform//{{ tweet.id }}" class="btn-action">
+      <button routerLink ="/commentform/{{ tweet.id }}" class="btn-action">
         <i class="far fa-comment"></i>
         Send Reply
       </button>
@@ -21,9 +21,9 @@
     </button>
 
 
-    <button routerLink ="/commentlist//{{ tweet.id }}" class="btn-action">
+    <button routerLink ="/commentlist/{{ tweet.id }}" class="btn-action">
       <i class="fas fa-info-circle"></i>
-      Tweet Details
+      Comments
     </button>
 
   </div>

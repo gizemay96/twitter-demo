@@ -1,5 +1,5 @@
 export type Comment = {
-    tweetId?:number;
+    tweetId:number;
     id?: number;
     title: string;
     text: string;

@@ -1,48 +1,20 @@
 import { Injectable } from '@angular/core';
 import { Comment } from '../types/comment.type';
+import { comment } from '../models/shared/commentData.json';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CommentService {
 
-  comments: Comment[] = [
-    {
-      tweetId:1,
-      id: 1,
-      title: 'Anna',
-      text:
-        'COMMENT ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat eget libero eu lobortis. Praesent porttitor mi sed molestie ornare. Aliquam ',
-      likes: 30,
-      retweets: 95,
-    },
-    {
-      tweetId:1,
-      id: 2,
-      title: 'mikeee',
-      text:
-        'COMMENT ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat eget libero eu lobortis. Praesent porttitor mi sed molestie ornare. Aliquam  ',
-      likes: 30,
-      retweets: 95,
-    },
-    {
-      tweetId:2,
-      id: 1,
-      title: 'John',
-      text:
-        'COMMENT ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat eget libero eu lobortis. Praesent porttitor mi sed molestie ornare. Aliquam  ',
-      likes: 30,
-      retweets: 95,
-    },
-  ];
+  comments = comment;
 
   constructor() {
 
    }
 
   submitComment(comment: Comment): void {
-    console.log(this.comments)
-    const newComment: Comment = {
+    const newComment = {
       id: Math.floor(Math.random() * 100),
       ...comment,
       likes: 0,
