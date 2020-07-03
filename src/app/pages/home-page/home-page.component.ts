@@ -14,6 +14,7 @@ export class HomePageComponent implements OnInit {
   constructor(private tweetService: TweetServiceService) {}
 
   ngOnInit(): void {
+
   }
 
   get tweets() {

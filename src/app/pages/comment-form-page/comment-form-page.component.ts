@@ -28,9 +28,7 @@ export class CommentFormPageComponent implements OnInit {
     const selectedId = id - 1
     const selectTweet = this.tweet[selectedId]
     this.selectedTweet = selectTweet;
- 
 
-    console.log(this.selectedTweet)
   }
 
   get tweets() {

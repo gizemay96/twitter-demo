@@ -36,13 +36,14 @@ export class TweetServiceService {
 
   submitTweet(tweet: Tweet): void {
     const newTweet: Tweet = {
-      id: Math.floor(Math.random() * 6) + 4  ,
+      id: Math.floor(Math.random() * 100)+4,
       ...tweet,
       likes: 0,
       retweets: 0,
     };
 
     this.tweets.unshift(newTweet);
+    console.log(this.tweets)
   }
 
   like(id: number) {

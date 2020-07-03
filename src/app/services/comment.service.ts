@@ -36,18 +36,20 @@ export class CommentService {
     },
   ];
 
-  constructor() { }
+  constructor() {
+
+   }
 
   submitComment(comment: Comment): void {
+    console.log(this.comments)
     const newComment: Comment = {
-      id: Math.floor(Math.random() * 6) + 4  ,
+      id: Math.floor(Math.random() * 100),
       ...comment,
       likes: 0,
       retweets: 0,
     };
 
     this.comments.unshift(newComment);
-
-    console.log(this.comments)
+    
   }
 }
