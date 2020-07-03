@@ -1,0 +1,31 @@
+<div class="comment-form">
+  <form action="#" (submit) = "onSubmit()">
+    <div class="form-control">
+      <label for="name"></label>
+      <input type="text" name="name" id="name" placeholder="Your Nickname.." [(ngModel)]="comment.title" />
+    </div>
+    <div class="form-control">
+      <label for="comment"></label>
+      <textarea
+        name="comment"
+        id="comment"
+        cols="47"
+        rows="5"
+        placeholder="Tweet your reply"
+        [(ngModel)]="comment.text"
+      ></textarea>
+    </div>
+    <div class="actions">
+      <div class="action-icons">
+        <a href="/"><i class="far fa-image"></i></a>
+        <a href="/"><i class="far fa-square"></i></a>
+        <a href="/"><i class="fas fa-poll-h"></i></a>
+        <a href="/"><i class="far fa-smile"></i></a>
+        <a href="/"><i class="fas fa-business-time"></i></a>
+      </div>
+      <div class="action-btn">
+        <button class="btn-md" type="submit">Reply</button>
+      </div>
+    </div>
+  </form>
+</div>

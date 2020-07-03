@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { TweetServiceService } from '../../../services/tweet-service.service';
+import { Component, OnInit, Input, Output , EventEmitter } from '@angular/core';
+
+
 
 @Component({
   selector: 'app-twit-list-card',
@@ -8,21 +9,21 @@ import { TweetServiceService } from '../../../services/tweet-service.service';
 })
 export class TwitListCardComponent implements OnInit {
 
-  constructor(private tweetService: TweetServiceService) { }
+  @Input() tweet;
+  @Output() like = new EventEmitter();
+  @Output() Rtweet = new EventEmitter();
+  constructor() { }
+
 
   ngOnInit(): void {
   }
 
-  get tweets() {
-    return this.tweetService.tweets;
+  onLike (id:number){
+    this.like.emit(id)
   }
 
-  onLike(id: number) {
-    this.tweetService.like(id);
-  }
-
-  onRetweet(id: number) {
-    this.tweetService.retweet(id);
+  onRetweet(id:number) {
+    this.Rtweet.emit(id)
   }
 
 }

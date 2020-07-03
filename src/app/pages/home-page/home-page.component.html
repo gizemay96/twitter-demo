@@ -4,7 +4,7 @@
       <p><i class="far fa-star"></i></p>
     </div>
     <app-tweet-input></app-tweet-input>
-    <app-twit-list-card ></app-twit-list-card>
+    <app-twit-list-card *ngFor="let tweet of tweets" [tweet]="tweet" (like)="likeTweet($event)" (Rtweet)="retweet($event)"></app-twit-list-card>
     <div class="page-bottom">
 
     </div>

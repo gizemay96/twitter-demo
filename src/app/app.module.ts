@@ -21,11 +21,13 @@ import { HashtagsCardComponent } from './components/molecule/hashtags-card/hasht
 import { FollowCardComponent } from './components/molecule/follow-card/follow-card.component';
 import { CommentFormPageComponent } from './pages/comment-form-page/comment-form-page.component';
 import { CommentListPageComponent } from './pages/comment-list-page/comment-list-page.component';
+import { CommentFormComponent } from './components/molecule/comment-form/comment-form.component';
+import { CommentListComponent } from './components/molecule/comment-list/comment-list.component';
 
 
 
 @NgModule({
-  declarations: [AppComponent, HomePageComponent,TwitListCardComponent, TweetInputComponent, NavbarComponent, SearchInputComponent,ImagesCardComponent,CardItemUserComponent, CardItemHashtagsComponent,HashtagsCardComponent, SideBarComponent, FollowCardComponent, CommentFormPageComponent, CommentListPageComponent,],
+  declarations: [AppComponent, HomePageComponent,TwitListCardComponent, TweetInputComponent, NavbarComponent, SearchInputComponent,ImagesCardComponent,CardItemUserComponent, CardItemHashtagsComponent,HashtagsCardComponent, SideBarComponent, FollowCardComponent, CommentFormPageComponent, CommentListPageComponent, CommentFormComponent, CommentListComponent,],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

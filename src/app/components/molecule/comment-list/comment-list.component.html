@@ -1,0 +1,33 @@
+<div class="card comment-card">
+<div class="card-header">
+    <p class="comment-title">{{coment.title}} </p>
+    <p class="comment-nick">@{{coment.title}} </p>
+</div>
+<p class="comment-text">{{coment.text}} </p>
+<div class="card-actions">
+    <button routerLink ="/commentform//{{ coment.id }}" class="btn-action">
+        <i class="far fa-comment"></i>
+        Comments
+      </button>
+    
+    <button class="btn-action" >
+      <i class="fas fa-retweet"></i>
+      {{ coment.retweets }}
+    </button>
+
+    <button class="btn-action">
+      <i class="far fa-heart"></i>
+      {{ coment.likes }}
+    </button>
+
+
+    <button routerLink ="/commentlist//{{ coment.id }}" class="btn-action">
+      <i class="fas fa-info-circle"></i>
+      Tweet Details
+    </button>
+</div>
+</div>
+
+<!-- 
+(click)="onLike(coment.id)"
+(click)="onRetweet(coment.id)" -->

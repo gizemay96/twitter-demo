@@ -1,4 +1,4 @@
-<div class="tweet-card" *ngFor="let tweet of tweets">
+<div class="card tweet-card">
   <div class="card-header">
     <h1>{{ tweet.title | titlecase }}</h1>
     <h5> @Name</h5>
@@ -7,7 +7,7 @@
   <div class="card-actions">
       <button routerLink ="/commentform//{{ tweet.id }}" class="btn-action">
         <i class="far fa-comment"></i>
-        Comments
+        Send Reply
       </button>
     
     <button class="btn-action" (click)="onRetweet(tweet.id)">
@@ -28,4 +28,3 @@
 
   </div>
 </div>
-

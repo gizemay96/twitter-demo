@@ -36,7 +36,7 @@ export class TweetServiceService {
 
   submitTweet(tweet: Tweet): void {
     const newTweet: Tweet = {
-      id: Math.random(),
+      id: Math.floor(Math.random() * 6) + 4  ,
       ...tweet,
       likes: 0,
       retweets: 0,

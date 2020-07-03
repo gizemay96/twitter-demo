@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TweetServiceService } from '../../services/tweet-service.service';
 
 
 @Component({
@@ -8,7 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
 
-  constructor() {}
+  tweet = this.tweets;
 
-  ngOnInit(): void {}
+  constructor(private tweetService: TweetServiceService) {}
+
+  ngOnInit(): void {
+  }
+
+  get tweets() {
+    return this.tweetService.tweets;
+  }
+
+  likeTweet(id:number) {
+    this.tweetService.like(id);
+  }
+
+  retweet(id:number) {
+    this.tweetService.retweet(id);
+  }
 }

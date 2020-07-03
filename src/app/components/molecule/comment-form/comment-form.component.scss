@@ -1,0 +1,49 @@
+.comment-form{
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 600px;
+    border: 1px solid #3A444C;
+    margin: 0 15px 0 0;
+
+
+    #name {
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.089);
+        border-radius: 5px;
+        padding: 5px 5px;
+        outline: none;
+        color: white;
+      
+        &::placeholder {
+          color: #b3b3b3;
+        }
+      }
+      
+      #comment {
+        resize: none;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: white;
+        letter-spacing: 1.5px;
+        font-size: 16px;
+        font-family: Helvetica;
+        margin-top: 30px;
+      }
+
+      .actions{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .action-icons {
+            padding-top: 15px;
+          i {
+            color: #4ba0ec;
+            font-size: 17px;
+            margin-right: 25px;
+          }
+        }
+        
+      }
+}

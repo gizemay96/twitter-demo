@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TweetServiceService } from '../../services/tweet-service.service';
 import { ActivatedRoute } from '@angular/router';
-import { Comment } from '../../types/comment.type'
+import { Comment } from '../../types/comment.type';
 
 
 @Component({
@@ -12,12 +12,10 @@ import { Comment } from '../../types/comment.type'
 export class CommentFormPageComponent implements OnInit {
 
   tweet = this.tweets;
+  selectedTweet;
 
-  comment: Comment = {
-    tweetId:0,
-    title: '',
-    text: '',
-  };
+
+ 
 
   constructor(
     private tweetService: TweetServiceService,
@@ -28,8 +26,11 @@ export class CommentFormPageComponent implements OnInit {
     const getId: string = this.route.snapshot.paramMap.get('id');
     const id = +getId;
     const selectedId = id - 1
+    const selectTweet = this.tweet[selectedId]
+    this.selectedTweet = selectTweet;
+ 
 
-    console.log(selectedId)
+    console.log(this.selectedTweet)
   }
 
   get tweets() {

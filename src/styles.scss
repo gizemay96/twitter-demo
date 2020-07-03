@@ -6,8 +6,8 @@
   box-sizing: border-box;
 }
 
-body{
-  background-color: #17202A;
+body {
+  background-color: #17202a;
   font-family: Helvetica;
 }
 
@@ -16,55 +16,47 @@ body{
   margin: 20px auto;
 }
 
-.line{
-  background-color: #3A444C;
-  max-width: 320px;
+.line {
+  background-color: #3a444c;
+  max-width: 650px;
   height: 1px;
   margin: 10px 0;
 }
 
-
-
-
-
-
 // ********************  Buttons ***********************  //
 .btn-sm {
   cursor: pointer;
-  border: 1px solid #4BA0EC;
+  border: 1px solid #4ba0ec;
   background-color: transparent;
-  color: #4BA0EC;
+  color: #4ba0ec;
   padding: 6px 16px;
   border-radius: 14px;
   outline: none;
   font-weight: bold;
- 
 
   &:hover {
-
     color: #fff;
-    background-color: darken(#4BA0EC, 10%);
+    background-color: darken(#4ba0ec, 10%);
   }
 }
 
 .btn-md {
   cursor: pointer;
   border: none;
-  background-color: #4BA0EC;
+  background-color: #4ba0ec;
   color: #fff;
   padding: 14px 30px;
-  border-radius: 4px;
+  border-radius: 20px;
   outline: none;
- 
 
   &:hover {
-    background-color: darken(#4BA0EC, 10%);
+    background-color: darken(#4ba0ec, 10%);
   }
 }
 
 .btn-lg {
   width: 210px;
-  background-color: #4BA0EC;
+  background-color: #4ba0ec;
   color: #fff;
   padding: 14px 30px;
   margin: 15px 0;
@@ -72,39 +64,35 @@ body{
   border: none;
   border-radius: 50px;
   cursor: pointer;
- 
 
   &:hover {
-    background-color: darken(#4BA0EC, 10%);
+    background-color: darken(#4ba0ec, 10%);
   }
 }
- 
+
 .btn-action {
   margin-right: 20px;
   background-color: transparent;
   border: none;
-  color: #8A98A4;
+  color: #8a98a4;
   font-size: 11px;
   cursor: pointer;
   outline: none;
 }
 
-.text-btn{
-  color: #4BA0EC;
+.text-btn {
+  color: #4ba0ec;
   text-decoration: none;
 
-  &:hover{
-    color: darken(#4BA0EC,10%);
+  &:hover {
+    color: darken(#4ba0ec, 10%);
   }
 }
 
 // ********************  Buttons ***********************  //
 
-
-
-
 // ********************  Images ***********************  //
-.sm-circle{
+.sm-circle {
   width: 50px;
   height: 50px;
   overflow: hidden;
@@ -112,7 +100,7 @@ body{
   object-fit: cover;
 }
 
-.md-cicrle{
+.md-cicrle {
   width: 130px;
   height: 130px;
   overflow: hidden;
@@ -120,5 +108,62 @@ body{
   object-fit: cover;
 }
 
-
 // ********************  Images ***********************  //
+
+
+
+.card {
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border: 1px solid #3a444c;
+  margin: 0 15px 0 0;
+}
+
+
+// ********************  Tweet Card ***********************  //
+
+.tweet-card,.comment-card {
+  width: 600px;
+
+  .tweet-title,.comment-title {
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    margin-right: 5px;
+  }
+  .card-header {
+    display: flex;
+    .tweet-nick,.comment-nick {
+      color: #8a98a4;
+    }
+  }
+  .tweet-text,.comment-text {
+    font-size: 16px;
+    color: #ffffff;
+  }
+
+  .card-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+    p {
+      padding-right: 10px;
+      font-size: 13px;
+      color: #8a98a4;
+    }
+
+    strong {
+      font-size: 14px;
+      color: #ffffff;
+    }
+  }
+
+  .card-actions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+}
+// ********************  Tweet Card ***********************  //
