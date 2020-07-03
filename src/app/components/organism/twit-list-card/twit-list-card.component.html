@@ -1,7 +1,7 @@
 <div class="card tweet-card">
   <div class="card-header">
     <h1 class="tweet-title">{{ tweet.title | titlecase }}</h1>
-    <h5 class="tweet-nick"> @Name</h5>
+    <h5 class="tweet-nick"> @{{ tweet.title | titlecase }}</h5>
   </div>
   <p class="tweet-text">{{ tweet.text }}</p>
   <div class="card-actions">

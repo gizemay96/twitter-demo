@@ -37,7 +37,7 @@ export class CommentFormComponent implements OnInit {
     this.commentService.submitComment(this.comment);
     this.comment.title = '';
     this.comment.text = '';
-    this.router.navigateByUrl('/');
+    this.router.navigateByUrl(`/commentlist/${this.comment.tweetId}`);
 
  
   }

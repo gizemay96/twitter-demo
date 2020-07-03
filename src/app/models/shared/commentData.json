@@ -3,27 +3,27 @@
     {
       "tweetId":1,
       "id": 1,
-      "title": "'Anna'",
+      "title": "Anna",
       "text":
-        "'COMMENT ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat eget libero eu lobortis. Praesent porttitor mi sed molestie ornare. Aliquam '",
+        "COMMENT ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat eget libero eu lobortis.",
       "likes": 30,
       "retweets": 95
     },
     {
       "tweetId":1,
       "id": 2,
-      "title": "'mikeee'",
+      "title": "mikeee",
       "text":
-        "'COMMENT ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat eget libero eu lobortis. Praesent porttitor mi sed molestie ornare. Aliquam  '",
+        "COMMENT ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat eget libero eu lobortis. Praesent porttitor mi sed molestie ornare. Aliquam...",
       "likes": 30,
       "retweets": 95
     },
     {
       "tweetId":2,
       "id": 1,
-      "title": "'John'",
+      "title": "John",
       "text":
-       " 'COMMENT ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat eget libero eu lobortis. Praesent porttitor mi sed molestie ornare. Aliquam  '",
+       "COMMENT ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat eget libero eu lobortis.",
       "likes": 30,
       "retweets": 95
     }
