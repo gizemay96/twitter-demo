@@ -10,7 +10,6 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class CommentFormPageComponent implements OnInit {
   tweet = this.tweets;
-  selectedTweet;
 
   constructor(
     private tweetService: TweetServiceService,
@@ -18,17 +17,11 @@ export class CommentFormPageComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    const getId: string = this.route.snapshot.paramMap.get('id');
-    const id = +getId;
-    const selectedId = id - 1;
-
-    /* create new selected tweets data */
-    const selectTweet = this.tweet[selectedId];
-    this.selectedTweet = selectTweet;
   }
 
 
   get tweets() {
-    return this.tweetService.tweets;
+    const id: Number = +(this.route.snapshot.paramMap.get('id'));
+    return this.tweetService.tweets.find((tweet) => tweet.id === id)
   }
 }

@@ -9,41 +9,24 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./comment-list-page.component.scss'],
 })
 export class CommentListPageComponent implements OnInit {
-  tweet = this.tweets;
-  selectedTweet;
-
-  comment = this.comments;
-  selectedComments;
+   tweet = this.tweets;
+   comment = this.comments;
 
   constructor(
     private commentService: CommentService,
     private tweetService: TweetServiceService,
     private route: ActivatedRoute
   ) {}
-
+  
   ngOnInit(): void {
-    /* FILTER COMMENTS */
-    const getId: string = this.route.snapshot.paramMap.get('id');
-    const id = +getId;
-
-    const selectComent = this.comment.filter(
-      (comment) => comment.tweetId === id
-    );
-    this.selectedComments = selectComent;
-    /* FILTER COMMENTS */
-
-    /* GET SELECTED TWEET */
-    const selectedId = id - 1;
-    const selectTweet = this.tweet[selectedId];
-    this.selectedTweet = selectTweet;
-    /* GET SELECTED TWEET */
-  }
-
-  get comments() {
-    return this.commentService.comments;
-  }
-
-  get tweets() {
-    return this.tweetService.tweets;
-  }
+    }
+    get comments() {
+      const id: Number = +(this.route.snapshot.paramMap.get('id'));
+      return this.commentService.comments.filter((comment) => comment.tweetId === id)
+     }
+    
+     get tweets() {
+      const id: Number = +(this.route.snapshot.paramMap.get('id'));
+      return this.tweetService.tweets.find((tweet) => tweet.id === id);
+    }
 }

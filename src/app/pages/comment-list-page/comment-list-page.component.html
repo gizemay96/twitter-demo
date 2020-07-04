@@ -4,25 +4,25 @@
 </div>
 <div class="card tweet-card">
   <div class="card-header">
-    <h1 class="tweet-title">{{ selectedTweet.title | titlecase }}</h1>
+    <h1 class="tweet-title">{{ tweet.title | titlecase }}</h1>
     <h5 class="tweet-nick">@Name</h5>
   </div>
-  <p class="tweet-text">{{ selectedTweet.text }}</p>
+  <p class="tweet-text">{{ tweet.text }}</p>
   <div class="line"></div>
   <div class="card-info">
     <p>
-      <strong>{{ selectedTweet.retweets }}</strong> Retweets
+      <strong>{{ tweet.retweets }}</strong> Retweets
     </p>
     <p>
-      <strong>{{ selectedTweet.likes }}</strong> Likes
+      <strong>{{ tweet.likes }}</strong> Likes
     </p>
   </div>
   <div class="line"></div>
 </div>
 
 <div>
-  <app-comment-list
-    *ngFor="let coment of selectedComments"
+   <app-comment-list
+    *ngFor="let coment of comment"
     [coment]="coment"
   ></app-comment-list>
 </div>
